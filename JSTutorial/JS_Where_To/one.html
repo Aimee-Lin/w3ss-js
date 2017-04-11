@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        function me() {
+            document.getElementById("demo").innerHTML = "You can place any number of scripts in an HTML document"
+        }
+    </script>
+</head>
+<body>
+<!--You can place any number of scripts in an HTML document.-->
+<p id="demo">demo</p>
+<button type="button" onclick="me()">button</button>
+<button type="button" onclick="two()">button two</button>
+
+<script>
+    function two() {
+        document.getElementById('demo').innerHTML = "script in body"
+    }
+</script>
+
+</body>
+</html>
