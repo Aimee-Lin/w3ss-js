@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id="demo"></p>
+<p id="demo1"></p>
+<p id="demo2"></p>
+
+<!--运算符： + - * / ，赋值运算符是 = ，-->
+<script>
+    document.getElementById("demo").innerHTML=(3+2)*5;
+//    表达式可以包含变量值
+    var x;
+    x=6;
+    x=2;
+//    下面的赋值会把上面的赋值覆盖，所以x 是 = 2 ；
+    document.getElementById("demo1").innerHTML= x*9;
+//字符串的拼接也可以用 + - 号来实现；
+    document.getElementById("demo2").innerHTML= "hello"+" "+"world"+" "+2017;
+</script>
+</body>
+</html>
