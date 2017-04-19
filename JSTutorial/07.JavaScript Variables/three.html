@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id="demo"></p>
+<p id="demo1"></p>
+<p id="one"></p>
+<p id="two"></p>
+<script>
+    var a = 2 + 3 + 5 + 7;
+    var b = "hello" + " " + "world";
+    document.getElementById("demo").innerHTML = a;
+    document.getElementById("demo1").innerHTML = b;
+    //    把数字放在引号内，后面的数字都变成string
+    var c = "1" + 2 + 3;
+    //    在还没有引号的时候，数字还是number。
+    var d = 1 + 2 + "3" + 4;
+    document.getElementById("one").innerHTML = c;
+    document.getElementById("two").innerHTML = d;
+</script>
+</body>
+</html>
