@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Object Methods</title>
+</head>
+<body>
+<script>
+    /**
+     * 方法可以作为函数定义存储在属性中
+     */
+    var a = {
+        name: "apple", color: "red", number: "6", price: function () {
+            return this.number * 5.5 + "￥"
+        }
+    };
+    console.log(a.price());
+</script>
+</body>
+</html>
