@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Accessing Object Properties</title>
+</head>
+<body>
+<p id="one"></p>
+<p id="two"></p>
+<script>
+    /**
+     * 可以通过两种方式访问对象属性
+     */
+    var aa = {
+        name: "john",
+        age: "18",
+        id: "121",
+        like: "music"
+    };
+    document.getElementById("one").innerHTML = aa.name;
+    document.getElementById("two").innerHTML = aa["age"]
+</script>
+</body>
+</html>
