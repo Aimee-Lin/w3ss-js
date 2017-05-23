@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript Scope</title>
+</head>
+<body>
+<script>
+    /**
+     * 由于局部变量只在它们的函数中被识别，所以具有相同名称的变量可以在不同的函数中使用。
+     */
+    one();
+    two();
+    function one() {
+        var h = 9;
+        console.log(h)
+    }
+    function two() {
+        var h = 10;
+        console.log(h)
+    }
+</script>
+</body>
+</html>
