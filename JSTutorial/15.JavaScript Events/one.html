@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript Events</title>
+</head>
+<body>
+<p id="one"></p>
+<p id="two"></p>
+<button id="demo1">demo1</button>
+<button id="demo2" onclick="one()">demo2</button>
+<button id="demo3">demo3</button>
+<script>
+    /**
+     * demo1 是直接在自身改变值
+     * demo2 是调用函数one()的方法
+     * demo3 是获取 two 对象进行值添加操作
+     */
+    document.getElementById("demo1").onclick = function () {
+        this.innerHTML = Date();
+    }
+    function one() {
+        document.getElementById("one").innerHTML = Date();
+    }
+    document.getElementById("demo3").onclick = function () {
+        document.getElementById("two").innerHTML = Date();
+    }
+</script>
+</body>
+</html>
