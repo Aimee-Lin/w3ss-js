@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>string</title>
+</head>
+<body>
+<!--可以使用引号内的字符串，只要它们不匹配引号周围的字符串-->
+<p id="demo"></p>
+<script>
+
+    var demo1 = "hello world";
+    var demo2 = "His name is 'John'";
+    var demo3 = 'My name is "lisa"';
+
+    document.getElementById("demo").innerHTML =
+            demo1 + "<br>" + demo2 + "<br>" + demo3;
+</script>
+</body>
+</html>
