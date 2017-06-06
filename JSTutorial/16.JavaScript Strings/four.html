@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Breaking Long Code Lines</title>
+</head>
+<body>
+<p id="demo1"></p>
+<p id="demo2"></p>
+<p id="demo3"></p>
+<script>
+    /**
+     * demo1 可以把一个反斜杠放在字符串内
+     * demo2 用字符串相加的方法是比较安全的字符串连接法
+     * demo3 你不能行加上一个反斜杠打破一个代码
+     * @type {string}
+     */
+    document.getElementById("demo1").innerHTML = "hello \
+            world!";
+    document.getElementById("demo2").innerHTML = "hello " +
+            "world!";
+    //    document.getElementById("demo3").innerHTML= \
+    //    "hello world!";
+</script>
+</body>
+</html>
