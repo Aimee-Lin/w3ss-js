@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Strings Can be Objects</title>
+</head>
+<body>
+<p id="demo1"></p>
+<p id="demo2"></p>
+<script>
+    /**
+     * demo1 是因为值相等
+     * demo2 是因为类型不等
+     * @type {string}
+     */
+    var x = "lisa";
+    var y = new String("lisa");
+    document.getElementById("demo1").innerHTML = (x == y);
+    document.getElementById("demo2").innerHTML = (x === y);
+</script>
+</body>
+</html>
