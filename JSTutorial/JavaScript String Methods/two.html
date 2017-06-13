@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Finding a String in a String</title>
+</head>
+<body>
+<p id="demo"></p>
+<p id="demo2"></p>
+<script>
+    /**
+     * indexOf()可以找到文本的位置，也就是index值
+     * lastIndexOf()可以从后面开始找文本的位置
+     * @type {string}
+     */
+    var str = "fvbnmuewfh jehghhhh";
+    var a = str.indexOf("j");
+    var b = str.lastIndexOf("j");
+    document.getElementById("demo").innerHTML = a;
+    document.getElementById("demo2").innerHTML = b;
+</script>
+</body>
+</html>
