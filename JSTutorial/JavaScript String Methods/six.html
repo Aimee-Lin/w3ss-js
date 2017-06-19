@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript String Methods</title>
+</head>
+<body>
+<p id="demo"></p>
+<p id="demo1"></p>
+<script>
+    /**
+     * demo 表示从后面往前数第14个的位置开始，到第9的位置
+     * demo1 表示从index到结束
+     * @type {string}
+     */
+    var str = "sjdhf hello djsfbnej";
+    var a = str.slice(-14, -9);
+    var b=str.slice(7);
+    document.getElementById("demo").innerHTML = a;
+    document.getElementById("demo1").innerHTML=b;
+</script>
+</body>
+</html>
