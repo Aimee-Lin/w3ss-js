@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Replacing String Content</title>
+</head>
+<body>
+<button onclick="aa()">click me</button>
+<p id="demo">this is a apple</p>
+<script>
+    /**
+     * replace()的替换功能
+     */
+    function aa() {
+        var str = document.getElementById("demo").innerHTML;
+        var txt = str.replace("apple", "banana");
+        document.getElementById("demo").innerHTML = txt;
+    }
+</script>
+</body>
+</html>
