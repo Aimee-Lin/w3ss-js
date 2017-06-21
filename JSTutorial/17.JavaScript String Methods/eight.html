@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Replacing String Content</title>
+</head>
+<body>
+<button onclick="aa()">click me</button>
+<button onclick="bb()">try it</button>
+<p id="demo">this is a red apple and a green apple</p>
+<p id="demo1">a red apple a green apple a yellow apple </p>
+<script>
+    /**
+     * aa()方法是一个一个替换
+     * bb()方法是全部一起替换
+     */
+    function aa(){
+    var str = document.getElementById("demo").innerHTML;
+    var txt=str.replace("apple","banana");
+    document.getElementById("demo").innerHTML=txt;
+}
+    function bb(){
+        var nn = document.getElementById("demo1").innerHTML;
+        var ss=nn.replace(/apple/g,"banana");
+        document.getElementById("demo1").innerHTML=ss;
+    }
+</script>
+</body>
+</html>
